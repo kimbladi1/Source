@@ -1,0 +1,168 @@
+-- // SILENT + AIMASSIST MADE BY Memelouse#3150
+-- credit to RussianCoco#1746 for sending this to me SUB TO HALAL GAMING
+
+getgenv().Arceus = {
+    Silent = {
+        ["Enabled"] = (true), -- // Use The Silent Aim Or Not
+        
+        ["Part"] = ("HumanoidRootPart"), -- // What Part It Targerts
+        ["UseAirPart"] = (false), -- // When Target Isnt On The Ground It Uses This Part
+        ["AirPart"] = ("LowerTorso"), -- // The Parts It Targets On When Player Isnt On The Ground
+        ["ClosestPart"] = (true), -- // Automatically Gets The Closest Part Of The Target And Uses That
+        
+        ["HitChance"] = (100), -- // The Chance You Will Hit The Target
+        
+        ["Humanize"] = (true), -- // Makes Soo The Silent Doesnt Hit The Same Position
+        ["HumanizeValue"] = (10), -- // Makes How Much Power It Changes
+        
+        ["TriggerBot"] = (false), -- // Shoots AutoMatically
+        ["UseTriggerBotKeybind"] = (false), -- // Enable / Disable TriggerBot Keybind
+        ["TriggerBotKey"] = ("MouseButton3"), -- // KeyBind To Enable / Disable TriggerBot You Can Find More At https://create.roblox.com/docs/reference/engine/enums/UserInputType
+        
+        ["PredictMovement"] = (true), -- // Predicts Targets Movement
+        ["PredictionVelocity"] = (0.183), -- // How Much It Predicts
+        
+        ["AntiGroundShots"] = (true), -- // Makes So You Dont Shoot The Ground
+        ["AntiGroundValue"] = (0.5), -- // How Much Velocity It Rmoves From Target
+        ["WhenAntiGroundActivate"] = (-20), -- // When Its Gonna Activate
+        
+        ["AntiAimViewer"] = (false), -- // Bypasses The Mouse Position For The Server 
+        ["AntiAimViewerInterval"] = (5), -- // If You Cant Fire A Gun Make The Value Higher
+        
+        ["WallCheck"] = (true), -- // Checks If Theres A Wall
+        
+        ["CheckIf_KO"] = (true), -- // Checks If Target Is Grabbed Or Knocked
+        ["CheckIf_TargetDeath"] = (true), -- // Checks If Target Is Dead
+        
+        ["UseKeybind"] = (true), -- // Use The KeyBind To Enable / Disable The Silent Aim
+        ["Keybind"] = ("B") -- // The Keybind That Enables / Disables The Silent Aim
+    },
+    SilentAutoPrediction = {
+        ["Enable"] = (true), -- // Automatically Gets Good Prediction Of How Much Ping You Have
+        ["Over"] = (0.1848), -- // Prediction When Your Ping Is Over 160
+        ["160"] = (0.1663), -- // Prediction When Your Ping Is Over 160
+        ["150"] = (0.1574), -- // Prediction When Your Ping Is Over 150
+        ["140"] = (0.1555), -- // Prediction When Your Ping Is Over 140
+        ["130"] = (0.15), -- // Prediction When Your Ping Is Over 130
+        ["120"] = (0.1411), -- // Prediction When Your Ping Is Over 120
+        ["110"] = (0.1344), -- // Prediction When Your Ping Is Over 110
+        ["100"] = (0.1315), -- // Prediction When Your Ping Is Over 100
+        ["90"] = (0.13), -- // Prediction When Your Ping Is Over 90
+        ["80"] = (0.1295), -- // Prediction When Your Ping Is Over 80
+        ["70"] = (0.129), -- // Prediction When Your Ping Is Over 70
+        ["60"] = (0.125), -- // Prediction When Your Ping Is Over 60
+        ["50"] = (0.123), -- // Prediction When Your Ping Is Over 50
+        ["40"] = (0.119), -- // Prediction When Your Ping Is Over 40
+        ["30"] = (0.11), -- // Prediction When Your Ping Is Over 30
+        ["20"] = (0.1), -- // Prediction When Your Ping Is Over 20
+        ["10"] = (0.07) -- // Prediction When Your Ping Is Over 10
+    },
+    GunFOV = {
+        ["Enabled"] = (false), -- // Gun Fov / Fov Is Automatically Changed To Specific Gun Equipped
+    
+        ["Double-Barrel SG"] = {["Fov"] = 90}, -- // Db
+        ["Revolver"] = {["Fov"] = 90}, -- // Rev
+        ["SMG"] = {["Fov"] = 90}, -- // Smg
+        ["Shotgun"] = {["Fov"] = 90}, -- // Shotgun
+        ["Rifle"] = {["Fov"] = 90}, -- // Rifle
+        ["TacticalShotgun"] = {["Fov"] = 90}, -- // Tactical
+        ["Silencer"] = {["Fov"] = 90}, -- // Smg
+        ["AK47"] = {["Fov"] = 90}, -- // Ak47
+        ["AR"] = {["Fov"] = 90} -- // Rifle
+        -- // You Can Add Custom Weapons If You Want To :p
+    },
+    RangeFOV = {
+        ["Enabled"] = (false), -- // Gun Fov / Fov Is Automatically Changed To Specific Distance Between Target / This Will OverWrite GunFov
+        
+        ["Far_Activation"] = (math.huge), -- // Just Keep It At Math.Huge
+        ["Medium_Activation"] = (42), -- // Its Using Studs
+        ["Close_Activation"] = (16), -- // Its Uisng Studs
+        
+        ["Double-Barrel SG"] = {["Far"] = 7, ["Med"] = 9, ["Close"] = 15}, -- // Db
+        ["Revolver"] = {["Far"] = 4, ["Med"] = 6, ["Close"] = 10}, -- // Rev
+        ["SMG"] = {["Far"] = 3, ["Med"] = 5, ["Close"] = 7}, -- // Smg
+        ["Shotgun"] = {["Far"] = 5, ["Med"] = 7, ["Close"] = 10}, -- // Shotgun
+        ["Rifle"] = {["Far"] = 2, ["Med"] = 4, ["Close"] = 6}, -- // Rifle
+        -- // You Can Add Custom Weapons If You Want To :p
+    },
+    SilentFOV = {
+        ["Visible"] = (true), -- // If The Circle Is Showing Or Not
+        ["Filled"] = (false), -- // If The Circle Is Filled
+        ["Transparency"] = (1), -- // The Circle Transparency
+        ["Color"] = (Color3.fromRGB(87, 237, 255)), -- // Circle Transparency
+        ["Radius"] = (70) -- // How Big The Circle Is
+    },
+
+    AimAssist = {
+        ["Enabled"] = (false), -- // Use The Aim Assist Or Not
+        
+        ["Key"] = ("C"), -- // The Key To Lock Onto A Player
+        ["HoldMode"] = (false), -- // Enables While Only Holding The Key
+        
+        ["Part"] = ("HumanoidRootPart"), -- // The Part That Aim Assist Locks On
+        ["ClosestPart"] = (true), -- // Automatically Gets The Closest Part Of The Target And Uses That
+        
+        ["DisableTargetDeath"] = (true), -- // Disables When Target Dies
+        ["DisableLocalDeath"] = (true), -- // Disables When You Died
+        ["DisableOn_KO"] = (true), -- // Disables If Target Is KO Or Grabbed
+        
+        ["UseCircleRadius"] = (false), -- // Only Locks On To People Inside The Circle
+        ["DisableOutSideCircle"] = (false), -- // If Target Is OutSide The Circle It Disables The Aim Assist
+        
+        ["UseShake"] = (false), -- // Shakes The Camera
+        ["ShakeValue"] = (5), -- // How Much It Shakes
+        
+        ["PredictMovement"] = (true), -- // Predicts Targets MoveMent
+        ["PredictionVelocity"] = (0.123), -- // How Much It Predicts
+        
+        ["WallCheck"] = (true), -- // Checks If Theres A Wall
+        
+        ["Smoothness_X"] = (0.054), -- // How Smooth The Aim Assist Is On X
+        ["Smoothness_Y"] = (0.058) -- // How Smooth The Aim Assist Is On Y
+    },
+    AimAssistFOV = {
+        ["Visible"] = (false), -- // If The Circle Is Showing Or Not
+        ["Filled"] = (false), -- // If The Circle Is Filled
+        ["Transparency"] = (0.9), -- // Circle Transparency
+        ["Color"] = (Color3.fromRGB(255, 87, 87)), -- // Circle Transparency
+        ["Radius"] = (70) -- // How Big The Circle Is
+    },
+    Both = {
+        ["DetectDesync"] = (true), -- // Detects Velocity Changer + Actually Hits
+        ["DesyncDetection"] = (86), -- // When It Detects
+        
+        ["UsDetectDesyncKeybind"] = (false), -- // Enable / Disable Desync Detection Keybind
+        ["DetectDesyncKey"] = ("P"), -- // KeyBind To Enable / Disable Desync Detection
+        
+        ["DetectUnderGround"] = (true), -- // Detects Common UnderGround Resolver
+        ["UnderGroundDetection"] = (-30), -- // When It Detects
+        
+        ["UseUnderGroundKeybind"] = (false), -- // Enable / Disable UnderGround Resolver Keybind
+        ["UnderGroundKey"] = ("X"), -- // KeyBind To Enable / Disable UnderGround Resolver
+        
+        ["VisibleCheck"] = (true), -- // Checks If Target Is Visible
+        ["CrewCheck"] = (true), -- // Checks If Target Is In Your Crew
+        ["FriendCheck"] = (false), -- // Checks If Target Is Your Friend
+        ["TeamCheck"] = (false), -- // Checks If Player Is In the Same Team
+        
+        ["UseLay"] = (true), -- // Enable / Disable Lay Keybind
+        ["LayKeybind"] = ("T"), -- // KeyBind To Lay
+        
+        ["SendNotification"] = (true) -- // Sends Notification When you Enabled / Disabled Stuff
+    },
+    
+    Esp = {
+        ["Enabled"] = (false), -- // Enabel / Disable Esp
+        ["UseEspKeybind"] = (false), -- // Enable / Disable Esp Keybind
+        ["EspKey"] = ("Z"), -- // KeyBind To Enable / Disable Esp
+        ["HoldMode"] = (true), -- // Enables While Only Holding The Key
+        
+        ["Name"] = {["Enabled"] = true, ["OutLine"] = true, ["Color"] = Color3.fromRGB(255, 255, 255)}, -- // Shows Targets Name
+        ["Box"] = {["Enabled"] = true, ["OutLine"] = true, ["Color"] = Color3.fromRGB(255, 255, 255)}, -- // Shows Box On Target
+        ["HealthBar"] = {["Enabled"] = true, ["OutLine"] = true, ["Color"] = Color3.fromRGB(0, 255, 0)}, -- // Shows An Health Bar On Target
+        ["HealthText"] = {["Enabled"] = true, ["OutLine"] = true, ["Color"] = Color3.fromRGB(0, 255, 0)}, -- // Shows An Text How Much Hp Target Have
+        ["Distance"] = {["Enabled"] = true, ["OutLine"] = true, ["Color"] = Color3.fromRGB(255, 255, 255)} -- // Shows Targets Distance Between You
+    }
+}
+
+loadstring(game:HttpGet("https://gist.githubusercontent.com/Adel342/3a23d056c9622ca90a3d398fef7df2dd/raw/d0b03965dd39d4c0218df0e382174ffa1437740b/arceus"))()
