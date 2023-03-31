@@ -89,7 +89,7 @@ getgenv().Arceus = {
         ["Visible"] = (true), -- // If The Circle Is Showing Or Not
         ["Filled"] = (false), -- // If The Circle Is Filled
         ["Transparency"] = (1), -- // The Circle Transparency
-        ["Color"] = (Color3.fromRGB(87, 237, 255)), -- // Circle Transparency
+        ["Color"] = (Color3.fromRGB(255, 255, 255)), -- // Circle Transparency
         ["Radius"] = (70) -- // How Big The Circle Is
     },
 
