@@ -39,11 +39,14 @@ getgenv().Arceus = {
     },
     SilentAutoPrediction = {
         ["Enable"] = (true), -- // Automatically Gets Good Prediction Of How Much Ping You Have
-        ["Over"] = (0.1848), -- // Prediction When Your Ping Is Over 160
+        ["Over"] = (0.1848), -- // Prediction When Your Ping Is Over 200
+        ["190"] = (0.1813), -- // Prediction When Your Ping Is Over 190
+        ["180"] = (0.1733), -- // Prediction When Your Ping Is Over 180
+        ["170"] = (0.1693), -- // Prediction When Your Ping Is Over 170
         ["160"] = (0.1663), -- // Prediction When Your Ping Is Over 160
         ["150"] = (0.1574), -- // Prediction When Your Ping Is Over 150
         ["140"] = (0.1555), -- // Prediction When Your Ping Is Over 140
-        ["130"] = (0.15), -- // Prediction When Your Ping Is Over 130
+        ["130"] = (0.1548), -- // Prediction When Your Ping Is Over 130
         ["120"] = (0.1411), -- // Prediction When Your Ping Is Over 120
         ["110"] = (0.1344), -- // Prediction When Your Ping Is Over 110
         ["100"] = (0.1315), -- // Prediction When Your Ping Is Over 100
@@ -90,7 +93,7 @@ getgenv().Arceus = {
         ["Filled"] = (false), -- // If The Circle Is Filled
         ["Transparency"] = (1), -- // The Circle Transparency
         ["Color"] = (Color3.fromRGB(255, 255, 255)), -- // Circle Transparency
-        ["Radius"] = (70) -- // How Big The Circle Is
+        ["Radius"] = (60) -- // How Big The Circle Is
     },
 
     AimAssist = {
@@ -141,7 +144,7 @@ getgenv().Arceus = {
         ["UnderGroundKey"] = ("X"), -- // KeyBind To Enable / Disable UnderGround Resolver
         
         ["VisibleCheck"] = (true), -- // Checks If Target Is Visible
-        ["CrewCheck"] = (true), -- // Checks If Target Is In Your Crew
+        ["CrewCheck"] = (false), -- // Checks If Target Is In Your Crew
         ["FriendCheck"] = (false), -- // Checks If Target Is Your Friend
         ["TeamCheck"] = (false), -- // Checks If Player Is In the Same Team
         
