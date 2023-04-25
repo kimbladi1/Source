@@ -20,7 +20,7 @@
 getgenv().dot = {
     Main = {
         Enabled = true,
-        Keybind = Enum.KeyCode.Q,
+        Keybind = Enum.KeyCode.E,
         HitPart = "UpperTorso", --Options: "Head", "UpperTorso", "HumanoidRootPart" or "LowerTorso" ~ Other: "Random Upper", "Random Lower" and "Crazy"
         Airshot_function = true,
         --
