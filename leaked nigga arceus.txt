@@ -44,8 +44,8 @@ getgenv().Arceus = {
         ["180"] = (0.1733), -- // Prediction When Your Ping Is Over 180
         ["170"] = (0.1693), -- // Prediction When Your Ping Is Over 170
         ["160"] = (0.1663), -- // Prediction When Your Ping Is Over 160
-        ["150"] = (0.1574), -- // Prediction When Your Ping Is Over 150
-        ["140"] = (0.1555), -- // Prediction When Your Ping Is Over 140
+        ["150"] = (0.1594), -- // Prediction When Your Ping Is Over 150
+        ["140"] = (0.1589), -- // Prediction When Your Ping Is Over 140
         ["130"] = (0.1548), -- // Prediction When Your Ping Is Over 130
         ["120"] = (0.1411), -- // Prediction When Your Ping Is Over 120
         ["110"] = (0.1344), -- // Prediction When Your Ping Is Over 110
@@ -93,7 +93,7 @@ getgenv().Arceus = {
         ["Filled"] = (false), -- // If The Circle Is Filled
         ["Transparency"] = (0.1), -- // The Circle Transparency
         ["Color"] = (Color3.fromRGB(255, 255, 255)), -- // Circle Transparency
-        ["Radius"] = (15) -- // How Big The Circle Is
+        ["Radius"] = (18) -- // How Big The Circle Is
     },
 
     AimAssist = {
