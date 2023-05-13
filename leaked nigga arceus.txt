@@ -93,7 +93,7 @@ getgenv().Arceus = {
         ["Filled"] = (false), -- // If The Circle Is Filled
         ["Transparency"] = (0.1), -- // The Circle Transparency
         ["Color"] = (Color3.fromRGB(255, 255, 255)), -- // Circle Transparency
-        ["Radius"] = (15) -- // How Big The Circle Is
+        ["Radius"] = (20) -- // How Big The Circle Is
     },
 
     AimAssist = {
@@ -148,7 +148,7 @@ getgenv().Arceus = {
         ["FriendCheck"] = (false), -- // Checks If Target Is Your Friend
         ["TeamCheck"] = (false), -- // Checks If Player Is In the Same Team
         
-        ["UseLay"] = (true), -- // Enable / Disable Lay Keybind
+        ["UseLay"] = (false), -- // Enable / Disable Lay Keybind
         ["LayKeybind"] = ("T"), -- // KeyBind To Lay
         
         ["SendNotification"] = (true) -- // Sends Notification When you Enabled / Disabled Stuff
