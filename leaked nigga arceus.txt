@@ -93,7 +93,7 @@ getgenv().Arceus = {
         ["Filled"] = (false), -- // If The Circle Is Filled
         ["Transparency"] = (0.1), -- // The Circle Transparency
         ["Color"] = (Color3.fromRGB(255, 255, 255)), -- // Circle Transparency
-        ["Radius"] = (17) -- // How Big The Circle Is
+        ["Radius"] = (20) -- // How Big The Circle Is
     },
 
     AimAssist = {
