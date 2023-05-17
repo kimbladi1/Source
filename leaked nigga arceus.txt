@@ -91,7 +91,7 @@ getgenv().Arceus = {
     SilentFOV = {
         ["Visible"] = (true), -- // If The Circle Is Showing Or Not
         ["Filled"] = (false), -- // If The Circle Is Filled
-        ["Transparency"] = (0.1), -- // The Circle Transparency
+        ["Transparency"] = (0.5), -- // The Circle Transparency
         ["Color"] = (Color3.fromRGB(255, 255, 255)), -- // Circle Transparency
         ["Radius"] = (20) -- // How Big The Circle Is
     },
