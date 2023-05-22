@@ -1,0 +1,42 @@
+local Client = game:GetService("Players").LocalPlayer
+local Mouse = Client:GetMouse()
+
+function AntiAimViewer(Plr)
+if Plr then
+local Uis = game:GetService("UserInputService")
+local M_Pos = Uis:GetMouseLocation()
+local M_Pos_2 = Vector2.new(Mouse.X, Mouse.Y)
+
+wait(tonumber("0.035"))
+
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Char = Client.Character
+local DahoodPos = Char.BodyEffects.MousePos
+local DahoodPos_2 = ReplicatedStorage.MainEvent.UpdateMousePos
+
+print("…")
+
+DahoodPos_2:Destroy()
+DahoodPos:Destroy()
+local f_ = "t PRAN"..""
+local function parameter(tt)
+local __ = print
+
+repeat 
+wait() 
+until (true)
+
+if not __ then
+return
+end
+
+__(tt)
+end
+local df = "E"
+parameter("you".." go"..f_.."K"..df.."D")
+end
+end
+
+game:GetService("RunService").Stepped:Connect(function()
+AntiAimViewer(true)
+end)
