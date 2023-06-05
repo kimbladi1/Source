@@ -13,7 +13,7 @@ getgenv().Arceus = {
         ["HitChance"] = (100), -- // The Chance You Will Hit The Target
         
         ["Humanize"] = (true), -- // Makes Soo The Silent Doesnt Hit The Same Position
-        ["HumanizeValue"] = (10), -- // Makes How Much Power It Changes
+        ["HumanizeValue"] = (20), -- // Makes How Much Power It Changes
         
         ["TriggerBot"] = (false), -- // Shoots AutoMatically
         ["UseTriggerBotKeybind"] = (false), -- // Enable / Disable TriggerBot Keybind
